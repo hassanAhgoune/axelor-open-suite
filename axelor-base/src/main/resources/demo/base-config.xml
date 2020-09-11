@@ -109,7 +109,7 @@
         <bind to="fullAddress" eval="call:com.axelor.apps.base.service.BankAddressService:computeFullAddress(null, address, null)" />
     </input>
 	
-	<input file="base_bankDetails.csv" separator=";" type="com.axelor.apps.base.db.BankDetails" >
+	<input file="base_bankDetails.csv" separator=";" type="zeee.axelor.apps.base.db.BankDetails" >
 		<bind to="partner" column="partner_importId" search="self.importId =:partner_importId" update="true" />
 		<bind to="isDefault" eval="true" />
 	</input>
